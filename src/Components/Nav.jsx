@@ -23,6 +23,12 @@ function Navbar() {
         <Link to="/ToDo" className="text-white hover:text-yellow-400 transition">
           ToDo
         </Link>
+        <Link to="/Counter" className="text-white hover:text-yellow-400 transition">
+          Counter
+        </Link>
+        <Link to="/More" className="text-white hover:text-yellow-400 transition">
+          More
+        </Link>
         <Link to="/Contact" className="text-white hover:text-yellow-400 transition">
           Contact
         </Link>

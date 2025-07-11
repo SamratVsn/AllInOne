@@ -6,6 +6,9 @@ import Jokes from './Components/Jokes'
 import Clock from './Components/Clock'
 import Navbar from './Components/Nav';
 import ToDo from './Components/taskManager'
+import Counter from './Components/Counter'
+import More from './Components/More'
+import TicTacToe from './Components/TicTacToe';
 
 function App() {
   return (
@@ -16,6 +19,9 @@ function App() {
         <Route path="/Jokes" element={<Jokes/>}/>
         <Route path="/Clock" element={<Clock/>}/>
         <Route path="/ToDo" element={<ToDo/>}/>
+        <Route path="/Counter" element={<Counter/>}/>
+        <Route path="/More" element={<More/>}/>
+        <Route path="/TicTacToe" element={<TicTacToe/>}/>
         {/* <Route path="/" element={<XYZ/>}/> */}
         <Route path="/Contact" element={<Contact/>}/>
       </Routes>

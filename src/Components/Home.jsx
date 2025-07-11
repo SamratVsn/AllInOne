@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from '../assets/image.png'
+import Krishna from '../assets/Krishna.png'
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -7,7 +7,7 @@ function Home() {
     <div className="bg-[#1a1a2e] text-white min-h-screen flex flex-col items-center justify-center px-4 py-8">
       <div className="text-center">
         <img
-          src={Image}
+          src={Krishna}
           alt="3D Avatar"
           className="w-48 h-48 mx-auto mb-4"
         />
