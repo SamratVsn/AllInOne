@@ -16,27 +16,27 @@ function TicTacToe() {
 
   const resetG = () => {
     setBoard(Array(9).fill(null));
-    setIsOTurn(true); 
+    setIsOTurn(true);
   };
 
   return (
-    <div className="bg-[#1a1a2e] min-h-screen text-white flex flex-col items-center justify-center pt-20 px-4">
-      <h1 className="text-4xl font-bold text-yellow-500 mb-4">🎮 Tic Tac Toe</h1>
+    <div className="bg-gradient-to-br from-[#1e1e2f] to-[#151522] min-h-screen text-white flex flex-col items-center justify-center pt-24 px-4">
+      <h1 className="text-4xl font-bold text-indigo-300 mb-3">🎮 Tic Tac Toe</h1>
 
-      <p className="text-lg mb-6">
+      <p className="text-lg mb-6 text-slate-300">
         {winner
           ? winner === 'Draw'
-            ? "It's a draw!!!"
+            ? "🤝 It's a draw!"
             : `🏆 Winner: ${winner}`
-          : `${isOTurn ? '⭕' : '❌'}'s Turn`}
+          : `Turn: ${isOTurn ? '⭕' : '❌'}`}
       </p>
 
-      <div className="grid grid-cols-3 gap-2 mb-6">
+      <div className="grid grid-cols-3 gap-3 mb-6">
         {board.map((value, index) => (
           <button
             key={index}
             onClick={() => handleClick(index)}
-            className="w-20 h-20 bg-[#0f0f1c] border border-yellow-400 text-2xl font-bold hover:bg-yellow-500 hover:text-black transition duration-300"
+            className="w-24 h-24 bg-[#232336] border border-indigo-400 rounded-xl text-3xl font-bold text-white hover:bg-indigo-500/20 transition duration-300 shadow-md"
           >
             {value}
           </button>
@@ -45,10 +45,14 @@ function TicTacToe() {
 
       <button
         onClick={resetG}
-        className="bg-cyan-500 hover:bg-cyan-400 text-black font-semibold py-2 px-6 rounded-xl transition duration-300"
+        className="bg-cyan-500 hover:bg-cyan-400 text-black font-semibold py-2 px-6 rounded-xl transition duration-300 shadow"
       >
         🔁 Restart
       </button>
+
+      <footer className="mt-10 text-slate-500 text-xs border-t border-slate-700 pt-4">
+        &copy; 2025 <span className="text-indigo-300 font-medium">AllInOneVsn</span>. Built by Samrat.
+      </footer>
     </div>
   );
 

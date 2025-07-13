@@ -9,6 +9,7 @@ import ToDo from './Components/taskManager'
 import Counter from './Components/Counter'
 import More from './Components/More'
 import TicTacToe from './Components/TicTacToe';
+import Weather from './Components/Weather';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Counter" element={<Counter/>}/>
         <Route path="/More" element={<More/>}/>
         <Route path="/TicTacToe" element={<TicTacToe/>}/>
+        <Route path="/Weather" element={<Weather/>}/>
         {/* <Route path="/" element={<XYZ/>}/> */}
         <Route path="/Contact" element={<Contact/>}/>
       </Routes>
