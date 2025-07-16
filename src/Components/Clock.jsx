@@ -12,15 +12,14 @@ export default function Clock() {
       setTime(`${hours}:${minutes}:${seconds}`);
     };
 
-    updateClock(); 
+    updateClock();
     const intervalId = setInterval(updateClock, 1000);
-
     return () => clearInterval(intervalId);
   }, []);
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-[#1a1a2e] text-[#f1f1f1] font-mono">
-      <div className="text-6xl px-10 py-5 bg-[#16213e] border-2 border-yellow-400 rounded-lg shadow-[0_0_10px_#e4d804]">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#0f172a] to-[#1e293b] p-4">
+      <div className="text-white font-mono text-5xl sm:text-6xl md:text-7xl px-10 py-6 rounded-2xl shadow-xl border border-white/10 backdrop-blur-md bg-white/10">
         {time}
       </div>
     </div>
